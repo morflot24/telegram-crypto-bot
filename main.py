@@ -2,8 +2,9 @@ import os
 import requests
 import time
 
-BOT_TOKEN = os.environ['BOT_TOKEN']
-CHAT_ID = os.environ['CHAT_ID']
+BOT_TOKEN = os.environ['8187877945:AAFRiwKnsrJyKVh_kjckzxW4AMKknJ0q2Yo
+']
+CHAT_ID = os.environ['1197094001']
 
 def get_funding_rate():
     # Пример: получаем funding с Coinalyze (заглушка)
