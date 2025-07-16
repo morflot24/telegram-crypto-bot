@@ -18,6 +18,13 @@ def send_message(text):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     payload = {"chat_id": CHAT_ID, "text": text}
     response = requests.post(url, data=payload)
+    print(f"✅ Status: {response.status_code}")
+    print(f"📨 Response: {response.text}")
+    
+def send_message(text):
+    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+    payload = {"chat_id": CHAT_ID, "text": text}
+    response = requests.post(url, data=payload)
     print(f"Sent message, response: {response.status_code} - {response.text}")
 
 if __name__ == "__main__":
